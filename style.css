@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    min-height: 50vh;
+    font-size: 1.2em;
+   background-position: center; 
+   background-size: cover;
+   background-size: 100% 140%;
+   
+}
+.header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: black;
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    width: 75%;
+}
+.box{
+    color: black;
+    padding: 20px;
+    border: solid black;
+    width: 800px;
+    margin: 100px auto; 
+    border-radius: 20px;  
+    box-shadow: 20px 5px 5px 10px black;
+    text-decoration: solid rgb(230, 0, 0);
+}
+input[type='text']{
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    display: inline-block;
+    border: solid black;
+    background: white;
+}
+select{
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+    display: inline-block;
+    border: solid black;
+    background: white;
+}
+input[type='checkbox']{
+    width: 50px;
+    padding: 10px;
+    margin: auto;
+    border: solid black;
+    background: white;
+}
+.btn-outline-dark{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+}

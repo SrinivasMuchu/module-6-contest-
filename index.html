@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="icon" href="register form logo.PNG">
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+   
+    
+    <div class="box">
+        <h1 class="header"  >RIGISTRATION FORM</h1><br>
+        <form action="" id="register-form" class="register" name="registerform" method="dialog" >
+            <label for="FullName"> Full name </label>
+            <input type="text" placeholder="please enter full name" name="fn" id="fnn" required />
+            <div class="valid-feedback" id="full-name-valid">
+				Looks good!
+			</div>
+			<div class="invalid-feedback" id="full-name-invalid">
+				Please enter valid full name
+			</div>
+            <br>
+            <label for="Gender" >Gender</label><br>
+            <select id="gn" class="gender" name="gn" required >
+                <option value="none" selected>Choose...</option>
+                   <option value="Male">Male</option>
+                   <option value="Male">Female</option>
+                   <option value="Male">Transgender</option>
+                  
+            </select>
+            <div class="valid-feedback" id="gender-valid">
+				Looks good!
+			</div>
+			<div class="invalid-feedback" id="gender-invalid">
+				Please select gender.
+			</div>
+            
+            <br>
+            <br>
+            
+              <label for="Hobbies" >Hobbies</label><br>
+             <input type="checkbox" class="hobbie" name="hb" id="swimming" value="swimming"/>swimming<br>
+             <input type="checkbox" class="hobbie" name="hb" id="reading novels" value="Reading Novels"/>Reading Novels<br>
+             <input type="checkbox" class="hobbie" name="hb" id="dancing" value="Dancing"/>Dancing<br>
+             <input type="checkbox" class="hobbie" name="hb" id="singing" value="Singing"/>Singing
+             <br>
+             <br>
+             <div class="valid-feedback" id="hobbie valid">
+				Looks good!
+			 </div>
+             <div class="invalid-feedback" id="hobbie invalid">
+                You must click atleast one hobbie
+             </div>
+
+            <button type="button" class="btn btn-outline-dark" style="display: flex;
+            justify-content: center;
+            align-items: center;top: 50%;left: 50%;" onclick="return validate(false)" > submit</button>
+
+        </form>
+    </div>
+    <script src="myscript.js"></script>
+    
+</body>
+</html>
